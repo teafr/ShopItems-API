@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopItems API", "ShopItems API\ShopItems API.csproj", "{703D4282-0E91-413E-AE3E-7083FD1AC38E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopItems API", "ShopItems API\ShopItems API.csproj", "{703D4282-0E91-413E-AE3E-7083FD1AC38E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "..\..\C#\DataLibrary\DataLibrary.csproj", "{3817841A-F46F-407E-9CDF-C96FC310F8F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "..\..\..\C#\DataLibrary\DataLibrary.csproj", "{4D969CFC-2F72-422E-830E-CB0BC898543D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{703D4282-0E91-413E-AE3E-7083FD1AC38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{703D4282-0E91-413E-AE3E-7083FD1AC38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{703D4282-0E91-413E-AE3E-7083FD1AC38E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3817841A-F46F-407E-9CDF-C96FC310F8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3817841A-F46F-407E-9CDF-C96FC310F8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3817841A-F46F-407E-9CDF-C96FC310F8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3817841A-F46F-407E-9CDF-C96FC310F8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D969CFC-2F72-422E-830E-CB0BC898543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D969CFC-2F72-422E-830E-CB0BC898543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D969CFC-2F72-422E-830E-CB0BC898543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D969CFC-2F72-422E-830E-CB0BC898543D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

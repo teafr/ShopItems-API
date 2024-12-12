@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\C#\DataLibrary\DataLibrary.csproj" />
+    <ProjectReference Include="..\..\..\..\C#\DataLibrary\DataLibrary.csproj" />
   </ItemGroup>
 
 </Project>
