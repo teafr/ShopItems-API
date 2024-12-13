@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 using ShopItems_API.Models;
 using DataLibrary;
 
@@ -16,11 +15,11 @@ namespace ShopItems_API.Controllers
 
         private List<Item> _items = new List<Item>();
 
-        public ItemController(IConfiguration configuration) 
+        public ItemController(IConfiguration configuration, IDataAccess dataAccess) 
         { 
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("default")!;
-            _dataAccess = new DataAccess();
+            _dataAccess = dataAccess;
         }
 
         [HttpGet]

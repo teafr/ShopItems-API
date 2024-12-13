@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using ShopItems_API.Data;
 
 namespace ShopItems_API.Controllers
 {
@@ -14,13 +15,13 @@ namespace ShopItems_API.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly List<User> _users = new List<User>()
-        {
-            new User() { UserName = "Someone", Password = "passw", Role = "User" },
-            new User() { UserName = "Honcharova", Password = "adminPassw", Role = "Admin" }
-        };
+        private readonly List<User> _users;
 
-        public LoginController(IConfiguration configuration) { _configuration = configuration; }
+        public LoginController(IConfiguration configuration) 
+        { 
+            _configuration = configuration;
+            _users = Users.users;
+        }
 
         [AllowAnonymous]
         [HttpPost]
