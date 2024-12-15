@@ -4,6 +4,8 @@
 You can't make CRUD operations until you Authorithed. Only admin have access to POST, PUT and DELETE operations. 
 Even if you simply want to GET information, you still have to be athorized, but you don't have to be an admin for that. 
 
+### How it works with Postman
+![video](./Resources/postman_API.gif)
 ### NuGet Packages
 For JWT Bearer (Token Autherization):
 - Microsoft.AspNetCore.Authentication.JwtBearer
