@@ -4,10 +4,13 @@ namespace ShopItems_API.Data
 {
     public static class Users
     {
-        public static readonly List<User> users = new List<User>()
+        public static List<User> GetUsers()
         {
-            new User() { UserName = "Someone", Password = "passw", Role = "User" },
-            new User() { UserName = "Honcharova", Password = "adminPassw", Role = "Admin" }
-        };
+            return new List<User>()
+            {
+                new User() { UserName = "Someone", Password = "passw", Role = "User" },
+                new User() { UserName = "Honcharova", Password = "adminPassw", Role = "Admin" }
+            };
+        }
     }
 }
