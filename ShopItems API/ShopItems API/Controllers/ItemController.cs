@@ -9,16 +9,14 @@ namespace ShopItems_API.Controllers
     [Route("api/[controller]")]
     public class ItemController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
         private readonly IDataAccess _dataAccess;
         private readonly string _connectionString;
 
         private List<Item> _items = new List<Item>();
 
         public ItemController(IConfiguration configuration, IDataAccess dataAccess) 
-        { 
-            _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("default")!;
+        {
+            _connectionString = configuration.GetConnectionString("default")!;
             _dataAccess = dataAccess;
         }
 

@@ -20,7 +20,7 @@ namespace ShopItems_API.Controllers
         public LoginController(IConfiguration configuration) 
         { 
             _configuration = configuration;
-            _users = Users.users;
+            _users = Users.GetUsers();
         }
 
         [AllowAnonymous]
