@@ -2,7 +2,6 @@ using DataLibrary;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using ShopItems_API.DiContainer;
-using System.Text;
 
 namespace ShopItems_API
 {
